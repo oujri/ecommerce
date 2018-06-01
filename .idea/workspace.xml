@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="141ce723-36d5-42ad-b038-01b268e0c450" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/templates/ecommerce/update_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/static/ecommerce/js/product/product-create.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/static/ecommerce/js/product/product-create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/templates/ecommerce/create-store.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/templates/ecommerce/create-store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/templates/ecommerce/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/templates/ecommerce/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/templates/ecommerce/list_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/templates/ecommerce/list_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/templates/ecommerce/my-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/templates/ecommerce/my-account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,26 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="2665" column="110" selection-start-line="2665" selection-start-column="110" selection-end-line="2665" selection-end-column="110" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-                <element signature="e#739#4527#0" />
-                <element signature="e#15016#23402#0" />
-                <element signature="e#23437#27595#0" />
-                <element signature="e#23674#27595#0" />
-                <element signature="e#27631#28490#0" />
-                <element signature="e#28527#31165#0" />
-                <element signature="e#31193#31811#0" />
-                <element signature="e#31850#33497#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecommerce/forms.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,8 +52,8 @@
       <file leaf-file-name="update_product.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/update_product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="55" column="63" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+            <state relative-caret-position="479">
+              <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
               <folding>
                 <element signature="e#6493#6533#0#HTML" expanded="true" />
                 <element signature="e#7263#7291#0#HTML" expanded="true" />
@@ -175,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_done.html" />
         <option value="$PROJECT_DIR$/ecommerce/signal.py" />
         <option value="$PROJECT_DIR$/espr/signals.py" />
         <option value="$PROJECT_DIR$/espr/urls.py" />
@@ -222,10 +200,11 @@
         <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/product.html" />
         <option value="$PROJECT_DIR$/ecommerce/forms.py" />
         <option value="$PROJECT_DIR$/ecommerce/urls.py" />
-        <option value="$PROJECT_DIR$/ecommerce/views.py" />
         <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/js/product/product-create.js" />
         <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/create-store.html" />
         <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/update_product.html" />
+        <option value="$PROJECT_DIR$/ecommerce/views.py" />
+        <option value="$PROJECT_DIR$/../../ecommerce/views.py" />
       </list>
     </option>
   </component>
@@ -443,13 +422,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ecommerce/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/espr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -811,24 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="2665" column="110" selection-start-line="2665" selection-start-column="110" selection-end-line="2665" selection-end-column="110" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#739#4527#0" />
-            <element signature="e#15016#23402#0" />
-            <element signature="e#23437#27595#0" />
-            <element signature="e#23674#27595#0" />
-            <element signature="e#27631#28490#0" />
-            <element signature="e#28527#31165#0" />
-            <element signature="e#31193#31811#0" />
-            <element signature="e#31850#33497#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ecommerce/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -860,10 +814,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="2790" lean-forward="true" selection-start-line="2527" selection-end-line="2790" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#739#4527#0" />
+            <element signature="e#15016#23402#0" />
+            <element signature="e#23437#27595#0" />
+            <element signature="e#23674#27595#0" />
+            <element signature="e#27631#28490#0" />
+            <element signature="e#28527#31165#0" />
+            <element signature="e#31193#31811#0" />
+            <element signature="e#31850#33497#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ecommerce/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="2725" column="39" selection-start-line="2725" selection-start-column="39" selection-end-line="2725" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/update_product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="55" column="63" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        <state relative-caret-position="479">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
           <folding>
             <element signature="e#6493#6533#0#HTML" expanded="true" />
             <element signature="e#7263#7291#0#HTML" expanded="true" />

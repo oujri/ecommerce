@@ -242,6 +242,8 @@
                     <li><a href="{% url 'e_commerce:all_orders' %}">Tous les commandes</a></li>
                 </ul>
             </div>
+            {% else %}
+                <a href="{% url 'e_commerce:create_store' %}"><h2 class="subtitle" style="margin-top: 40px">Devenir Exposant</h2></a>
             {% endif %}
         </aside>
         <!--Right Part End -->

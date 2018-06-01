@@ -42,7 +42,7 @@ class Address(models.Model):
 class CommerceCategory(models.Model):
     name = models.CharField(max_length=200)
     image_path = time.strftime('images/%Y/%m/%d')
-    image = models.ImageField(upload_to=PathAndRename(image_path), default='/images/categories.jpg')
+    image = models.ImageField(upload_to=PathAndRename(image_path))
 
     def __str__(self):
         return self.name
@@ -91,8 +91,8 @@ class Tag(models.Model):
 class Shop(models.Model):
     name = models.CharField(max_length=200)
     image_path = time.strftime('images/%Y/%m/%d')
-    image_profile = models.ImageField(upload_to=PathAndRename(image_path), default='/images/categories.jpg')
-    image_cover = models.ImageField(upload_to=PathAndRename(image_path), default='/images/categories.jpg')
+    image_profile = models.ImageField(upload_to=PathAndRename(image_path))
+    image_cover = models.ImageField(upload_to=PathAndRename(image_path))
     description = models.TextField(null=True, blank=True)
     number_visitors = models.IntegerField(default=0)
     date_creation = models.DateField(auto_now_add=True)
@@ -110,7 +110,7 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=15, decimal_places=2, default=0)
     image_path = time.strftime('images/%Y/%m/%d')
-    image = models.ImageField(upload_to=PathAndRename(image_path), default='/images/categories.jpg')
+    image = models.ImageField(upload_to=PathAndRename(image_path))
     date_add = models.DateField(auto_now_add=True)
     cat = models.ForeignKey(CommerceSCategory, on_delete=models.CASCADE, null=True)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE, blank=True, null=True)

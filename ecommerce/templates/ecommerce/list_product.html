@@ -15,6 +15,11 @@
                 <div class="module">
                     <h3 class="modtitle2">Mes Produits</h3>
                 </div>
+                {% if message_warning %}
+                <div id="success" class="alert alert-warning" role="alert">
+                    {{ message_warning }}
+                </div>
+                {% endif %}
                 {% if results %}
                 <!-- Filters -->
                 <div class="product-filter product-filter-top filters-panel">
@@ -252,7 +257,8 @@
                                         </button>
                                     </td>
                                     <td class="text-center" style="padding-top: 15px">
-                                        <form action="{% url 'e_commerce:remove_product' %}">
+                                        <form action="{% url 'e_commerce:remove_product' %}" method="post">
+                                            {% csrf_token %}
                                             <input type="hidden" value="{{ product.pk }}" name="product">
                                             <input type="hidden" value="{{ request.path }}" name="next">
                                             <button type="submit" data-toggle="tooltip" title="Supprimer" class="btn btn-danger">

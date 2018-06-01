@@ -336,39 +336,11 @@ def search(request):
 
 
 def products(request, type_search="all", id_search="0"):
-    user = request.user
     # ---------------- Featured brands
     brands = Brand.objects.exclude(image='').values('id').annotate(number=Count('product__id')).order_by('number')
     for el in brands:
         brand = Brand.objects.get(pk=el['id'])
         el['id'] = brand
-
-    # ---------------- number items in wishlist
-    if user.is_authenticated:
-        number_items_wish_list = WishList.objects.filter(user__user=user).count()
-    else:
-        number_items_wish_list = 0
-
-    # ---------------- number items in compare
-    if user.is_authenticated:
-        number_items_compare = Compare.objects.filter(user__user=user).count()
-    else:
-        number_items_compare = 0
-
-    # --------------- All Categories ---------------
-    categories = all_categories()
-
-    # --------------- Hot Categories ---------------
-    hot_categories = my_featured_sale()['hot_categories']
-
-    # --------------- All Tags ---------------
-    tags = all_tags()
-
-    # --------------- Cart ---------------
-    my_cart_result = my_cart(user)
-    number_products_in_cart = my_cart_result['number_products_in_cart']
-    total_price_in_cart = my_cart_result['total_price_in_cart']
-    cart_result = my_cart_result['cart']
 
     # Initialisation
     list_products = category = None
@@ -387,7 +359,6 @@ def products(request, type_search="all", id_search="0"):
         tags_s = Tag.objects.filter(pk=id_search)
         if tags_s.exists():
             products_results = Product.objects.filter(tags__id__exact=id_search, active=True, approved=True)
-            #message = "Achetez par : {}".format(tags_s[0].name)
             message = "Achetez par: {}".format(tags_s[0].name)
             name = tags_s[0].name
         else:
@@ -515,19 +486,9 @@ def products(request, type_search="all", id_search="0"):
         end_index = index_page + 5 if index_page <= max_index - 4 else max_index
         page_range = list(paginator.page_range)[start_index:end_index]
     if found is False:
-        message = "Sorry we didn't found this '{}'".format(type_search)
+        message = "Désolé nous n'avons pas troucvé ce '{}'".format(type_search)
         list_products = None
     context = {
-        # for nase
-        'categories': categories,
-        'number_items_wish_list': number_items_wish_list,
-        'number_items_compare': number_items_compare,
-        'hot_categories': hot_categories[:4],
-        'tags': tags,
-        'cart': cart_result,
-        'total_price_in_cart': total_price_in_cart,
-        'number_products_in_cart': number_products_in_cart,
-
         'results': list_products,
         'brands': brands,
         'type_search': type_search,
@@ -550,33 +511,6 @@ def your_products(request):
     if not user.profil.is_supplier:
         return HttpResponseRedirect(reverse('e_commerce:index'))
     else:
-        # ---------------- number items in wishlist
-        if user.is_authenticated:
-            number_items_wish_list = WishList.objects.filter(user__user=user).count()
-        else:
-            number_items_wish_list = 0
-
-        # ---------------- number items in compare
-        if user.is_authenticated:
-            number_items_compare = Compare.objects.filter(user__user=user).count()
-        else:
-            number_items_compare = 0
-
-        # --------------- All Categories ---------------
-        categories = all_categories()
-
-        # --------------- Hot Categories ---------------
-        hot_categories = my_featured_sale()['hot_categories']
-
-        # --------------- All Tags ---------------
-        tags = all_tags()
-
-        # --------------- Cart ---------------
-        my_cart_result = my_cart(user)
-        number_products_in_cart = my_cart_result['number_products_in_cart']
-        total_price_in_cart = my_cart_result['total_price_in_cart']
-        cart_result = my_cart_result['cart']
-
         # Initialisation
         category = None
         page_range = []
@@ -586,10 +520,9 @@ def your_products(request):
         sort_by = request.POST.get("sort_by", "1")
 
         if user.profil.is_supplier:
-            products_results = Product.objects.filter(supplier=user.profil.shop, active=True)
+            products_results = Product.objects.filter(supplier=user.profil.shop, active=True, approved=True)
         else:
-            products_results = Product.objects.filter(active=True)
-            # A revoir
+            products_results = Product.objects.filter(active=True, approved=True)
         if not products_results.exists():
             found = False
         if found:
@@ -626,19 +559,14 @@ def your_products(request):
             page_range = list(paginator.page_range)[start_index:end_index]
         else:
             list_products = None
+        message_warning = None
+        if 'message_warning' in request.session:
+            message_warning = request.session['message_warning']
+            del request.session['message_warning']
         context = {
-            # for nase
-            'categories': categories,
-            'number_items_wish_list': number_items_wish_list,
-            'number_items_compare': number_items_compare,
-            'hot_categories': hot_categories[:4],
-            'tags': tags,
-            'cart': cart_result,
-            'total_price_in_cart': total_price_in_cart,
-            'number_products_in_cart': number_products_in_cart,
-
             'results': list_products,
             'category': category,
+            'message_warning': message_warning,
 
             'page_range': page_range,
             'sort_by': sort_by,
@@ -649,15 +577,21 @@ def your_products(request):
 
 def remove_product(request):
     user = request.user
+    print('1')
     if not user.is_authenticated:
+        print('2')
         return HttpResponseRedirect(reverse('main_app:log_in'))
     if not user.profil.is_supplier:
+        print('3')
         return HttpResponseRedirect(reverse('e_commerce:index'))
     if request.method == "POST":
-        product_id = request.POST.get('product')
+        print('4')
+        product_id = request.POST.get('product', '')
         if product_id:
+            print('5')
             product_l = Product.objects.filter(pk=product_id)
             if product_l.exists():
+                print('6')
                 product = product_l[0]
                 product.active = False
                 product.save()
@@ -2356,6 +2290,8 @@ def add_product(request):
                         product.tags.add(get_object_or_404(Tag, id=t))
                     product.save()
                     del request.session['product_id']
+                    request.session['message_warning'] = "Votre Produit sera approuvé par des administrateurs"
+                    print(request.session['message_warning'])
                     return redirect('e_commerce:your_products')
         if product_id is None:
             store = get_object_or_404(Shop, owner=user)
@@ -2525,7 +2461,7 @@ def product_add_tag(request):
     return redirect('e_commerce:add_product')
 
 
-# ## ADD PRODUCT VIEW ## #
+# ## UPDATE PRODUCT VIEW ## #
 def update_product(request, product_id):
     if request.user.is_authenticated:
         user = request.user.profil
