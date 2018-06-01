@@ -7,6 +7,7 @@ $(".form-delete-image").submit(function( event ) {
         dataType: 'json',
         success: function (data) {
 			if(data.message == "success") {
+				console.log(data.tr);
 			    $(data.tr).remove();
             }
 		}
@@ -39,6 +40,7 @@ $("#form-stock").submit(function( event ) {
 			    $("#id_quantity").val('');
 			    $("#id_color").val("");
 			    $("#id_price_sup").val("");
+			    $("#stock_t").prepend("<tr><td class='text-center'>" + data.message + "</td></tr>");
 			    setTimeout(function () {
 			        $("#stock-modal-success").hide();
                 }, 5000);

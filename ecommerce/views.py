@@ -2523,3 +2523,268 @@ def product_add_tag(request):
                 }
             return JsonResponse(data)
     return redirect('e_commerce:add_product')
+
+
+# ## ADD PRODUCT VIEW ## #
+def update_product(request, product_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+        if request.method == 'POST':
+            if product_id is not None:
+                form = UpdateProductForm(request.POST, request.FILES)
+                if form.is_valid():
+                    cd = form.cleaned_data
+                    product.name = cd['name']
+                    img = cd['image']
+                    if img:
+                        product.image = cd['image']
+                    product.price = cd['price']
+                    product.cat = cd['category']
+                    product.brand = cd['brand']
+                    product.quantity_min = cd['min_quantity']
+                    product.unit = cd['unit']
+                    professional = cd['professional']
+                    if professional == 'yes':
+                        product.is_pro = True
+                    else:
+                        product.is_pro = False
+                    old_price = cd['old_price']
+                    if old_price:
+                        product.old_price = old_price
+                    price_from = request.POST.get('price_from')
+                    if price_from == 'yes':
+                        product.price_from = True
+                    product.packaging_detail = cd['packaging']
+                    product.delivery_time = cd['delivery']
+                    product.content = cd['description']
+                    product.active = True
+                    tags = request.POST.getlist('tags')
+                    for t in tags:
+                        product.tags.add(get_object_or_404(Tag, id=t))
+                    product.save()
+                    return redirect('e_commerce:your_products')
+
+        else:
+            form = UpdateProductForm(initial={
+                'name': product.name,
+                'price': product.price,
+                'category': product.cat,
+                'brand': product.brand,
+                'min_quantity': product.quantity_min,
+                'unit': product.unit,
+                'old_price': product.old_price,
+                'packaging': product.packaging_detail,
+                'delivery': product.delivery_time,
+                'description': product.content
+            })
+
+        context = {
+            'form': form,
+            'tags_form': Tag.objects.all().order_by('name'),
+            'stock_form': AddProductStockForm,
+            'specification_form': AddProductSpecificationForm,
+            'detail_form': AddProductDetailForm,
+            'tags': product.tags.all(),
+            'pro': product.is_pro,
+            'price_cat': product.price_from,
+            'stocks': product.stock_set.all(),
+            'details': product.commerceinformation_set.all(),
+            'specifications': product.specification_set.all(),
+            'images': product.commerceimage_set.all(),
+            'product': product
+        }
+
+        return render(request, 'ecommerce/update_product.html', context)
+
+    return redirect('e_commerce:index')
+
+
+@require_POST
+def up_product_upload_image(request, product_id):
+    print(product_id)
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+
+        # GET Product IMAGES FROM POST
+        form = ProductImageImport(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.save()
+            image.product = product
+            image.save()
+            data = {
+                'is_valid': True,
+                'name': image.image.name,
+                'url': image.image.url,
+                'id': image.id
+            }
+        else:
+            data = {'is_valid': False}
+        return JsonResponse(data)
+
+
+def up_product_delete_image(request, product_id, image_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+        image = get_object_or_404(CommerceImage, id=image_id)
+        image.delete()
+        data = {
+            'message': 'success',
+            'tr': '#tr' + str(image_id)
+        }
+        return JsonResponse(data)
+
+    return redirect('e_commerce:index')
+
+
+def up_product_add_stock(request, product_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner == user:
+            quantity = request.GET.get('quantity', None)
+            price_sup = request.GET.get('price_sup', None)
+            color = request.GET.get('color', None)
+            valid = True
+            if (quantity is None) or (quantity == ''):
+                valid = False
+            if valid is False:
+                data = {'valid': False}
+            else:
+                color_stock = Color.objects.create(name='color '+color, code_hex=color)
+                s = Stock.objects.create(quantity=quantity, price_sup=price_sup, color=color_stock, product=product, first_quantity=quantity)
+                data = {
+                    'valid': True,
+                    'message': 'Stock ' + str(s.id) + ', quantité: ' + str(s.quantity) + ', couleur: ' + color
+                }
+            return JsonResponse(data)
+    return redirect('e_commerce:add_product')
+
+
+def up_product_add_specification(request, product_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner == user:
+            name = request.GET.get('name', None)
+            content = request.GET.get('content', None)
+            valid = True
+            if (name is None) or (name == ''):
+                valid = False
+            if (content is None) or (content == ''):
+                valid = False
+            if valid is False:
+                data = {'valid': False}
+            else:
+                s = Specification.objects.create(name=name, value=content, product=product)
+                data = {
+                    'valid': True,
+                    'message': 'Spécification ' + str(s.id) + ', nom: ' + str(s.name) + ', contenu: ' + content
+                }
+            return JsonResponse(data)
+    return redirect('e_commerce:add_product')
+
+
+def up_product_add_detail(request, product_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner == user:
+            name = request.GET.get('name', None)
+            value = request.GET.get('value', None)
+            valid = True
+            if (name is None) or (name == ''):
+                valid = False
+            if (value is None) or (value == ''):
+                valid = False
+            if valid is False:
+                data = {'valid': False}
+            else:
+                c = CommerceInformation.objects.create(name=name, value=value, product=product)
+                data = {
+                    'valid': True,
+                    'message': 'Détail ' + str(c.id) + ', nom: ' + str(c.name) + ', valeur: ' + c.value
+                }
+            return JsonResponse(data)
+    return redirect('e_commerce:add_product')
+
+
+def up_product_add_tag(request, product_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner == user:
+            name = request.GET.get('name', None)
+            valid = True
+            if (name is None) or (name == ''):
+                valid = False
+            if valid is False:
+                data = {'valid': False}
+            else:
+                tag = Tag.objects.create(name=name)
+                data = {
+                    'valid': True,
+                    'id': tag.id,
+                    'value': tag.name
+                }
+            return JsonResponse(data)
+    return redirect('e_commerce:add_product')
+
+
+def up_product_delete_spec(request, product_id, spec_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+        s = get_object_or_404(Specification, id=spec_id)
+        s.delete()
+        data = {
+            'message': 'success',
+            'tr': '#tr_spec' + str(spec_id)
+        }
+        return JsonResponse(data)
+
+    return redirect('e_commerce:index')
+
+
+def up_product_delete_stock(request, product_id, stock_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+        s = get_object_or_404(Stock, id=stock_id)
+        s.delete()
+        data = {
+            'message': 'success',
+            'tr': '#tr_stock' + str(stock_id)
+        }
+        return JsonResponse(data)
+
+    return redirect('e_commerce:index')
+
+
+def up_product_delete_detail(request, product_id, detail_id):
+    if request.user.is_authenticated:
+        user = request.user.profil
+        product = get_object_or_404(Product, id=product_id)
+        if product.supplier.owner != user:
+            return redirect('e_commerce:my-account')
+        detail = get_object_or_404(CommerceInformation, id=detail_id)
+        detail.delete()
+        data = {
+            'message': 'success',
+            'tr': '#tr_detail' + str(detail_id)
+        }
+        return JsonResponse(data)
+
+    return redirect('e_commerce:index')

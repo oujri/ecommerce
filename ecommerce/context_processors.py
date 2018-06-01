@@ -20,10 +20,10 @@ def global_var(request):
     store = None
     if user.is_authenticated:
         profil = user.profil
-        if profil.is_professional:
+        if profil.is_professional and profil.is_supplier:
             if Shop.objects.filter(owner=profil).exists():
                 store = get_object_or_404(Shop, owner=profil).id
-                supplier =True
+                supplier = True
 
     # ---------------- is seller
     seller = False
