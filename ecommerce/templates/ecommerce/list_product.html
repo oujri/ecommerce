@@ -252,9 +252,7 @@
                                         </a>
                                     </td>
                                     <td class="text-center" style="padding-top: 15px">
-                                        <button type="submit" data-toggle="tooltip" title="Modifier" class="btn btn-primary">
-                                            <i class="fa fa-clone"></i>
-                                        </button>
+                                        <a href="{% url 'e_commerce:product_update' product.pk %}" class="btn btn-primary"><i class="fa fa-clone"></i></a>
                                     </td>
                                     <td class="text-center" style="padding-top: 15px">
                                         <form action="{% url 'e_commerce:remove_product' %}" method="post">
