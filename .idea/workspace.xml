@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="141ce723-36d5-42ad-b038-01b268e0c450" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="espr" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="2475" column="17" lean-forward="true" selection-start-line="2475" selection-start-column="17" selection-end-line="2475" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#739#4527#0" />
+                <element signature="e#15016#23402#0" />
+                <element signature="e#23437#27595#0" />
+                <element signature="e#23674#27595#0" />
+                <element signature="e#27631#28490#0" />
+                <element signature="e#28527#31165#0" />
+                <element signature="e#31193#31811#0" />
+                <element signature="e#31850#33497#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="437" column="183" selection-start-line="437" selection-start-column="183" selection-end-line="437" selection-end-column="183" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/list_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="258" column="71" selection-start-line="258" selection-start-column="71" selection-end-line="258" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/add_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+              <folding>
+                <element signature="e#3880#3905#0#HTML" expanded="true" />
+                <element signature="e#4033#4058#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="owl.carousel.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/js/owl-carousel/owl.carousel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="266" column="72" selection-start-line="266" selection-start-column="72" selection-end-line="266" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quickview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/quickview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="183" column="235" selection-start-line="183" selection-start-column="235" selection-end-line="183" selection-end-column="235" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/products.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3161">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="126" column="14" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="29" column="69" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list-categorieslist-categories</find>
+      <find>processing-orders</find>
+      <find>all-orders</find>
+      <find>order-information</find>
+      <find>order-history</find>
+      <find>ratting_int</find>
+      <find>Gérer</find>
+      <find>unité</find>
+      <find>piéce</find>
+      <find>images</find>
+      <find>paypal_no</find>
+      <find>comparer</find>
+      <find>ecriv</find>
+      <find>alert</find>
+      <find>process</find>
+      <find>datetime</find>
+      <find>50</find>
+      <find>decimal</find>
+      <find>checkout</find>
+      <find>total</find>
+      <find>daily</find>
+      <find>paypal</find>
+      <find>get_object_or_404</find>
+      <find>box-content1</find>
+      <find>percent }}</find>
+      <find>iframe</find>
+      <find>display_supplier</find>
+      <find>Produits Plus Vendus</find>
+      <find>products</find>
+      <find>products_sub</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/search.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/supplier.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_cancel.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_done.html" />
+        <option value="$PROJECT_DIR$/ecommerce/signal.py" />
+        <option value="$PROJECT_DIR$/espr/signals.py" />
+        <option value="$PROJECT_DIR$/espr/urls.py" />
+        <option value="$PROJECT_DIR$/espr/hooks.py" />
+        <option value="$PROJECT_DIR$/ecommerce/tests.py" />
+        <option value="$PROJECT_DIR$/ecommerce/apps.py" />
+        <option value="$PROJECT_DIR$/ecommerce/__init__.py" />
+        <option value="$PROJECT_DIR$/espr/__init__.py" />
+        <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/js/themejs/submit_paypal.js" />
+        <option value="$PROJECT_DIR$/ecommerce/admin.py" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_process.html" />
+        <option value="$PROJECT_DIR$/main_app/forms.py" />
+        <option value="$PROJECT_DIR$/main_app/models.py" />
+        <option value="$PROJECT_DIR$/ecommerce/urls.py" />
+        <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/css/header/header4.css" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/cart.html" />
+        <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/js/themejs/addtocart.js" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/compare.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/wish_list.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/suppliers.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/contact-us.html" />
+        <option value="$PROJECT_DIR$/ecommerce/models.py" />
+        <option value="$PROJECT_DIR$/ecommerce/signals.py" />
+        <option value="$PROJECT_DIR$/ecommerce/templatetags/coma_dot.py" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/contact-supplier.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/checkout.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/order-history.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/order-information.html" />
+        <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/css/theme.css" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/404.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/500.html" />
+        <option value="$PROJECT_DIR$/espr/settings.py" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/processing-orders.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/all-orders.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/base.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/all-categories.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/products.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/my-account.html" />
+        <option value="$PROJECT_DIR$/ecommerce/forms.py" />
+        <option value="$PROJECT_DIR$/ecommerce/context_processors.py" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/index.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/list_product.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/add_product.html" />
+        <option value="$PROJECT_DIR$/ecommerce/views.py" />
+        <option value="$PROJECT_DIR$/ecommerce/static/ecommerce/js/owl-carousel/owl.carousel.css" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/quickview.html" />
+        <option value="$PROJECT_DIR$/ecommerce/templates/ecommerce/product.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="1328" />
+    <option name="height" value="387" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="espr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="espr" type="462c0819:PsiDirectoryNode" />
+              <item name="main_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EL KHAOUA Karim\Stage\espr\ecommerce\static\ecommerce\image\catalog\banners\home" />
+      <recent name="C:\Users\EL KHAOUA Karim\Stage\espr\ecommerce\templates\ecommerce" />
+      <recent name="C:\Users\EL KHAOUA Karim\Stage\espr\ecommerce\templates\ecommerce\notYet\static" />
+      <recent name="C:\Users\EL KHAOUA Karim\Stage\espr\ecommerce\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anass\Desktop\NewspaperProject\espr\ecommerce" />
+      <recent name="C:\Users\anass\Desktop\NewspaperProject\espr\ecommerce\templates\ecommerce" />
+      <recent name="C:\Users\anass\Desktop\NewspaperProject\espr\ecommerce\templates" />
+      <recent name="C:\Users\anass\Desktop\NewspaperProject\espr\ecommerce\templatetags" />
+      <recent name="C:\Users\anass\Desktop\NewspaperProject\espr\ecommerce\static\ecommerce\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="espr" type="Python.DjangoServer" factoryName="Django server">
+      <module name="espr" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED,ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="141ce723-36d5-42ad-b038-01b268e0c450" name="Default" comment="" />
+      <created>1525174291060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525174291060</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52118003" side_tool="true" weight="0.2166405" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3265306" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.47881997" weight="0.24960753" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4945055" visible="true" weight="0.23499268" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info x="571" y="33" width="223" height="661" id="Structure" order="1" side_tool="true" weight="0.17246597" />
+      <window_info id="Favorites" order="2" sideWeight="0.50549453" side_tool="true" weight="0.21406959" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32810047" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32810047" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="72" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/espr/signals.py" />
+    <entry file="file://$PROJECT_DIR$/../env/Lib/site-packages/paypal/standard/ipn/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1094" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/espr/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/paypal_process.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/espr/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/js/themejs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#24#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/css/header/header4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="582" column="20" selection-start-line="582" selection-start-column="20" selection-end-line="582" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/js/themejs/addtocart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="111" column="251" selection-start-line="111" selection-start-column="251" selection-end-line="111" selection-end-column="251" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/compare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+          <folding>
+            <element signature="e#609#637#0#HTML" expanded="true" />
+            <element signature="e#1526#1543#0#HTML" expanded="true" />
+            <element signature="e#7706#7816#0#HTML" expanded="true" />
+            <element signature="e#8436#8527#0#HTML" expanded="true" />
+            <element signature="e#9125#9191#0#HTML" expanded="true" />
+            <element signature="e#9481#9547#0#HTML" expanded="true" />
+            <element signature="e#9848#9899#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/wish_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/suppliers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#216#240#0#HTML" expanded="true" />
+            <element signature="e#506#531#0#HTML" expanded="true" />
+            <element signature="e#21958#21982#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/contact-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
+          <folding>
+            <element signature="e#461#489#0#HTML" expanded="true" />
+            <element signature="e#675#714#0#HTML" expanded="true" />
+            <element signature="e#782#809#0#HTML" expanded="true" />
+            <element signature="e#1470#1502#0#HTML" expanded="true" />
+            <element signature="e#1712#1774#0#HTML" expanded="true" />
+            <element signature="e#2228#2272#0#HTML" expanded="true" />
+            <element signature="e#2633#2677#0#HTML" expanded="true" />
+            <element signature="e#3014#3058#0#HTML" expanded="true" />
+            <element signature="e#3397#3441#0#HTML" expanded="true" />
+            <element signature="e#3885#3911#0#HTML" expanded="true" />
+            <element signature="e#3395#3422#0#HTML" expanded="true" />
+            <element signature="e#4092#4118#0#HTML" expanded="true" />
+            <element signature="e#4347#4372#0#HTML" expanded="true" />
+            <element signature="e#4657#4679#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templatetags/coma_dot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/contact-supplier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="46" column="94" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="320" column="44" selection-start-line="320" selection-start-column="44" selection-end-line="320" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/order-information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1073">
+          <caret line="74" column="86" lean-forward="true" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="7121" column="13" selection-start-line="7121" selection-start-column="13" selection-end-line="7121" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/supplier.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/espr/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#303#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/supplier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3448">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/processing-orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/order-history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/all-orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="235" column="85" selection-start-line="235" selection-start-column="85" selection-end-line="235" selection-end-column="85" />
+          <folding>
+            <element signature="e#457#478#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/all-categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1048">
+          <caret line="157" column="29" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/entreprise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/products_sub.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="293" column="186" selection-start-line="293" selection-start-column="186" selection-end-line="293" selection-end-column="186" />
+          <folding>
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/my-account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="239" column="63" selection-start-line="239" selection-start-column="63" selection-end-line="239" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/create-store.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="106" column="13" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="126" column="14" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="437" column="183" selection-start-line="437" selection-start-column="183" selection-end-line="437" selection-end-column="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/list_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="258" column="71" selection-start-line="258" selection-start-column="71" selection-end-line="258" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/add_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+          <folding>
+            <element signature="e#3880#3905#0#HTML" expanded="true" />
+            <element signature="e#4033#4058#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="2475" column="17" lean-forward="true" selection-start-line="2475" selection-start-column="17" selection-end-line="2475" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#739#4527#0" />
+            <element signature="e#15016#23402#0" />
+            <element signature="e#23437#27595#0" />
+            <element signature="e#23674#27595#0" />
+            <element signature="e#27631#28490#0" />
+            <element signature="e#28527#31165#0" />
+            <element signature="e#31193#31811#0" />
+            <element signature="e#31850#33497#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/static/ecommerce/js/owl-carousel/owl.carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/quickview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="183" column="235" selection-start-line="183" selection-start-column="235" selection-end-line="183" selection-end-column="235" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3161">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerce/templates/ecommerce/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="266" column="72" selection-start-line="266" selection-start-column="72" selection-end-line="266" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
